@@ -2,6 +2,8 @@
 
 This project is a question-answering system focused on electrochemistry. It uses Google's Gemini model and a vector database (ChromaDB) to find relevant information from PDF documents and provide helpful answers to your questions about electrochemistry.
 
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant-v2)
+
 ### Workflow
 
 1.  **Document Processing:** Extracts text from PDF documents related to electrochemistry using `pdfminer.six`.
