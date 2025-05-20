@@ -62,7 +62,7 @@ The documents used for this project are PDF files related to electrochemistry te
 Contributions are welcome! Please feel free to open issues or pull requests for any improvements or bug fixes.
 
 ## Versioning
-The notebooks and the repositories are versioned using [SemVer(https://semver.org/)] for versioning. The current version is 2.0.
+The notebooks and the repositories are versioned using [SemVer](https://semver.org/) for versioning. The current version is 2.0.
 
 ## License
 
