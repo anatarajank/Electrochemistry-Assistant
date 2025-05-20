@@ -1,38 +1,53 @@
-# Electrochemistry Assistant - My First RAG
+# Electrochemistry Assistant
 
-This project showcases a question-answering system for electrochemistry, built using Google's Gemini model, ChromaDB, and Retrieval Augmented Generation (RAG). This is the capstone project developed for the Kaggle's 5 day Gen AI Intesive course with Google. 
+This project is a question-answering system focused on electrochemistry. It uses Google's Gemini model and a vector database (ChromaDB) to find relevant information from PDF documents and provide helpful answers to your questions about electrochemistry.
 
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant)
+### Workflow
 
-## Project Overview
+1.  **Document Processing:** Extracts text from PDF documents related to electrochemistry using `pdfminer.six`.
+2.  **Embedding Generation:** Creates embeddings for the extracted text using the Gemini API and stores them in a ChromaDB vector database.
+3.  **Query Processing:** Generates embeddings for user queries using the Gemini API.
+4.  **Retrieval:** Searches the vector database for relevant documents based on the query embeddings using TF-IDF, BM25, and Gemini models.
+5.  **Evaluation:** Evaluates the performance of the retrieval using metrics like Accuracy, Precision, Recall, F1-score, MRR, P@K, and NDCG@K.
+6.  **Answer Generation:** Uses the Gemini model with a prompt enriched by the retrieved documents to answer the user's question in a comprehensive and user-friendly way.
+7.  **Semantic Similarity Evaluation:** Assesses the quality and relevance of the generated answer by comparing it to the retrieved passages using a pre-trained Sentence Transformer model and calculating semantic similarity scores.
 
-This system efficiently retrieves relevant information from PDF documents to provide comprehensive and user-friendly answers to user queries related to electrochemistry. It was inspired by my participation in Kaggle's 5-day Gen AI intensive workshop, which equipped me with the knowledge and skills to embark on this exciting project.
+### Gen AI Features
 
-## How it Works
+*   **Embeddings:** Used to represent documents and queries as vectors, enabling semantic search for relevant information.
+*   **Retrieval Augmented Generation (RAG):** Retrieves relevant context from the document database to enhance the answer quality and accuracy.
+*   **Document understanding:** Allows the system to process and understand information from PDF documents containing electrochemical knowledge.
+*   **Large Language Models:** Utilizes the powerful Gemini model for accurate comprehension, generation, and contextualization of natural language.
 
-1. **Document Processing:** Text is extracted from PDF documents related to electrochemistry using `pdfminer`.
+## Prerequisites
 
-2. **Embedding Generation:** Embeddings are created for the extracted text using the Gemini API and stored in a ChromaDB vector database.
+*   Python 3.7 or higher
+*   Access to Google Colab or a Jupyter Notebook environment or a Kaggle environment
+*   A Google Cloud API key with access to the Gemini API.
 
-3. **Query Processing:** Embeddings are generated for user queries using the Gemini API.
+## Setup
 
-4. **Retrieval:** The vector database searches for relevant documents based on the query embeddings.
+1.  Clone this repository.
+2.  Install the required libraries:
+```pip install -qU "google-genai==1.7.0" "chromadb==0.6.3" "pdfminer.six" "hf_xet" "rank_bm25" sentence-transformers==2.2.2```
+3. Set up your Google Cloud API key for the Gemini API. If using Kaggle, add it as a secret named "GOOGLE_API_KEY". Otherwise, load it securely as an environment variable.
+4.  The project will automatically download the electrochemistry PDF data from Kaggle.
 
-5. **Answer Generation:** The Gemini model, enriched with the retrieved documents, generates a comprehensive and user-friendly answer.
+## API Key Authentication
 
-## Gen AI Features
+You need to securely provide your Google API key. If you are using Kaggle, follow these steps:
 
-* **Embeddings:** Represent documents and queries as vectors for semantic search.
-* **Retrieval Augmented Generation (RAG):** Retrieves relevant context to enhance answer quality.
-* **Large Language Model (LLM) Capabilities:** Leverages the Gemini model's advanced language understanding and generation abilities.
+1.  Go to the "Add-ons" menu.
+2.  Select "Secrets".
+3.  Add a new secret named "GOOGLE_API_KEY" and paste your Google Cloud API key as the value.
 
-## Setup and Usage
+If you are not using Kaggle, you will need to find an alternative secure method to load your API key as an environment variable.
 
-Please refer to the notebook for detailed setup instructions.
+Please refer to [this](https://www.kaggle.com/code/markishere/day-1-prompting#Day-1---Prompting) notebook for detailed setup instructions.
 
 ## Dataset
 
-The documents used for this project are PDF files related to electrochemistry techniques, stored in the `capstone-data-pdf` dataset folder. You can download the dataset from Kaggle [here](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant)
+The documents used for this project are PDF files related to electrochemistry techniques, stored in the `data` folder. You can download the dataset from Kaggle [here](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant-v2)
 
 ## Potential Applications
 
@@ -44,16 +59,12 @@ The documents used for this project are PDF files related to electrochemistry te
 
 Contributions are welcome! Please feel free to open issues or pull requests for any improvements or bug fixes.
 
+## Versioning
+The notebooks and the repositories are versioned using [SemVer(https://semver.org/)] for versioning. The current version is 2.0.
+
 ## License
 
 This project is licensed under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
 
 ## Author
 Aravindan Natarajan
-
-## Acknowledgments
-
-* Prof. Richard.S.Kelly for creating the valuable electrochemical resources used in this project. [Analytical Electrochemistry: The Basic Concepts](https://www.asdlib.org/onlineArticles/ecourseware/Kelly_Potentiometry/EC_CONCEPTS1.HTM)
-* Google AI for developing the Gemini model.
-* ChromaDB for providing the vector database.
-* Kaggle for hosting the Gen AI intensive workshop.
