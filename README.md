@@ -4,6 +4,21 @@ This project is a question-answering system focused on electrochemistry. It uses
 
 [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant-v2)
 
+[![DOI](https://upload.wikimedia.org/wikipedia/commons/1/11/DOI_logo.svg)](https://doi.org/10.20944/preprints202505.1674.v1)
+
+### Attribution
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/anatarajank/Electrochemistry-Assistant">Electrochemistry Assistant</a> &#169; 2025 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/anatarajank/">Aravindan Natarajan</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+
+### Citation
+If you use this repository in your work, please cite using the following:
+
+[![DOI](https://upload.wikimedia.org/wikipedia/commons/1/11/DOI_logo.svg)](https://doi.org/10.20944/preprints202505.1674.v1)
+
+Natarajan,  A.; Sankaranarayanan,  P. Electrochemistry Assistant: A Retrieval-Augmented Question Answering System for Electrochemical Information Retrieval. Preprints 2025, 2025051674. [doi:10.20944/preprints202505.1674.v1](https://doi.org/10.20944/preprints202505.1674.v1)
+
+And please cite this repository using the following:
+[Electrochemistry Assistant, Aravindan Natarajan, https://github.com/anatarajank/Electrochemistry-Assistant](https://github.com/anatarajank/Electrochemistry-Assistant)
+
 ### Workflow
 
 1.  **Document Processing:** Extracts text from PDF documents related to electrochemistry using `pdfminer.six`.
@@ -68,5 +83,6 @@ The notebooks and the repositories are versioned using [SemVer](https://semver.o
 
 This project is licensed under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-## Author
+## Authors
 Aravindan Natarajan
+Preethi Sankaranarayanan - Manuscript Contributor
