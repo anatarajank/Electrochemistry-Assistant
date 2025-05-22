@@ -4,6 +4,8 @@ This project is a question-answering system focused on electrochemistry. It uses
 
 [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aravindannatarajan/electrochemistry-assistant-v2)
 
+[![Static Badge](https://img.shields.io/badge/DOI%3A%2C%20https%3A%2F%2Fdoi.org%2F10.20944%2Fpreprints202505.1674.v1%2C%20yellow?style=flat)](https://doi.org/10.20944/preprints202505.1674.v1)
+
 [![DOI](https://upload.wikimedia.org/wikipedia/commons/1/11/DOI_logo.svg)](https://doi.org/10.20944/preprints202505.1674.v1)
 
 ### Attribution
@@ -84,5 +86,5 @@ The notebooks and the repositories are versioned using [SemVer](https://semver.o
 This project is licensed under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en).
 
 ## Authors
-Aravindan Natarajan
-Preethi Sankaranarayanan - Manuscript Contributor
+* Aravindan Natarajan
+* Preethi Sankaranarayanan - Manuscript Contributor
